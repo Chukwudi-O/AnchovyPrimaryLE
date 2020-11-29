@@ -4,8 +4,7 @@ body
 	padding: 30;
 	box-sizing: border-box: 
 	animation: bgcolor infinite 50%;
-
-	background: url('img/nwbg.jpg');
+	background: url('../resources/img/nwbg.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -23,6 +22,7 @@ h1
 .title{
 	background-color:#04d9ff;opacity:0.6;; 
     margin: auto;
+    margin-top: 250px;
     width: 50%;
     border: 3px solid black;
     padding: 3px;
@@ -52,6 +52,7 @@ input[type=text], input[type=password] {
 }
 .login{
 	margin: auto;
-    width: 20%;
-    padding: 3px;
+    width: 10%;
+    padding-bottom: 5px;
+
 }
