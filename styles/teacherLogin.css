@@ -4,7 +4,7 @@ body
 	padding: 30;
 	box-sizing: border-box: 
 	animation: bgcolor infinite 50%;
-	background: url('img/abg.jpg');
+	background: url('../resources/img/abg.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;
