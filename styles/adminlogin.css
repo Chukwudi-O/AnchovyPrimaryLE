@@ -4,7 +4,7 @@ body
 	padding: 30;
 	box-sizing: border-box: 
 	animation: bgcolor infinite 50%;
-	background: url('../img/nlbg.jpg');
+	background: url('../resources/img/nlbg.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;
