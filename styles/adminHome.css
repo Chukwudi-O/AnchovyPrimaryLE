@@ -1,0 +1,19 @@
+.centerText {
+	text-align: center;
+}
+
+.mainDiv {
+	width: 50%;
+	margin: auto;
+	margin-top: 100px;
+	background: lightblue;
+	padding: 15px;
+	border-radius: 10px;
+	border: 2px solid;
+}
+
+button {
+	width: 50%;
+	margin-bottom: 5%;
+	margin-left: 25%;
+}
