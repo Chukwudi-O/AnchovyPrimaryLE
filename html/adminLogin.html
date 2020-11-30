@@ -5,27 +5,19 @@
     <title>Admin</title>
 </head>
 <body class="bg">
+    <div class="title">
+        <h1>Anchovy Primary School</h1>
+        <h2>Admin Login</h2>
+    </div>
 
-<div class="title">
-            <h1>Anchovy Primary School</h1>
-            <h2>Admin Login</h2>
-        </div>
-
-        <div class="forms">
-    <form>
-        <div class="field">
-            <input type="Text" placeholder="username">
-        </div>
-
-        <div class="field">
-            <input type="Password" placeholder="Password">
-        </div>
-
-        <div class="login">
-            <input type="Submit" value="LOGIN">
-        </div>
-    </form>
-    <a href="index.html">Not an administrator? Click to go back.</a>
-</div>
+    <div class="forms">
+        <form method="post" action="../scripts/adminLogin.php" onsubmit="return validateLogin()" autocomplete="off">
+            <input type="text" id="user" name="user" placeholder="username">
+            <input type="password" id="pass" name="pass" placeholder="Password">
+            <div class="login"><input type="submit" value="LOGIN"></div>
+        </form>
+        <a href="index.html">Not an administrator? Click to go back.</a>
+    </div>
+    <script src="../scripts/adminLogin.js"></script> 
 </body>
 </html>
