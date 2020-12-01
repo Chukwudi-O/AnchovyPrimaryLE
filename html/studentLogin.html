@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link rel="stylesheet" type="text/css" href="../styles/studentLogin.css">
 	<title>Student</title>
 </head>
 <body class="bg">
 
-<div class="title">
-			<h1>Anchovy Primary School</h1>
-			<h2>Student Login</h2>
-		</div>
+    <div class="title">
+    			<h1>Anchovy Primary School</h1>
+    			<h2>Student Login</h2>
+    		</div>
 
-		<div class="forms">
-	<form>
-		<div class="field">
-            <input type="Text" placeholder="username">
-        </div>
-
-        <div class="field">
-            <input type="Password" placeholder="Password">
-        </div>
-
-        <div class="login">
-            <input type="Submit" value="LOGIN">
-        </div>
-    </form>
-    <a href="index.html">Not a student? Click to go back.</a>
-</div>
- 
+    		<div class="forms">
+    	<form method="post" action="../scripts/studentLogin.php" onsubmit="return validateLogin()">
+            <input type="Text" placeholder="username" id="user" name="user">
+            <input type="Password" placeholder="Password" id="pass" name="pass">
+            <div class="login"><input type="Submit" value="LOGIN"></div>
+        </form>
+        <a href="index.html">Not a student? Click to go back.</a>
+    </div>
+    <script src="../scripts/studentLogin.js"></script>
 </body>
 </html>
