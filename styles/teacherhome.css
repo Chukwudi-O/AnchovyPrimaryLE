@@ -4,7 +4,7 @@ body
 	padding: 30;
 	box-sizing: border-box: 
 	animation: bgcolor infinite 50%;
-	background: url('img/blackboardbg.jpg');
+	background: url('../img/blackboardbg.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -40,7 +40,7 @@ h2
 
 	width: 70%;
   	padding: 70px;
-  	margin: 8px 90px;
+  	margin: 2% 15%;
   	display: inline-block;
  	border: 1px solid #04d9ff;
   	box-sizing: border-box;
