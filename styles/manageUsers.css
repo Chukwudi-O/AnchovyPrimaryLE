@@ -1,0 +1,41 @@
+h1,h2,h3,p{
+	text-align: center;
+}
+
+.mainDiv{
+	width: 50%;
+	margin:auto;
+	background-color: lightblue;
+}
+
+.addUser{
+	margin-top: 5%;
+	border: 1px solid;
+}
+
+button,input[type=text] {
+	margin-left:25%;
+	margin-bottom: 5%;
+	width: 50%;
+}
+.auc{
+	width: 50%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom:10px; 
+}
+.auc input[type=radio]{
+
+}
+input[type=button]{
+	width: 25%;
+}
+
+.searchUser{
+	border: 1px solid;
+
+}
+
+.searchUser label{
+	margin-left: 20%;
+}
