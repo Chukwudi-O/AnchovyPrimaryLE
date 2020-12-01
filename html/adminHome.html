@@ -10,13 +10,22 @@
 	<div class="mainDiv">
 		<h2 class="centerText">Administrator Home</h2>
 		<p class="centerText">Welcome to the Administrator Home page where you may perform all of the action stated below:</p><br>
-
-		<button onclick="selectOp(0)">ADD COURSE MATERIAL</button><br>
-		<button onclick="selectOp(1)">VIEW ATTENDANCE RECORD</button><br>
-		<button onclick="selectOp(2)">MANAGE CLASSES</button><br>
-		<button onclick="selectOp(3)">VIEW CLASSES</button><br>
-		<button onclick="selectOp(4)">MANAGE NOTIFICATIONS</button>
+		<form action="../php/manageUsers.php">
+			<button type="Submit">MANAGE USERS</button><br>
+		</form>
+		<form>
+			<button type="Submit">ADD COURSE MATERIAL</button><br>
+		</form>
+		<form>
+			<button type="Submit">VIEW ATTENDANCE RECORD</button><br>
+		</form>
+		<form>
+			<button type="Submit">MANAGE CLASSES</button><br>
+		</form>
+		<form>
+			<button type="Submit">MANAGE NOTIFICATIONS</button><br>
+		</form>
+		
 	</div>
-	<script src="../scripts/adminHome.js"></script>
 </body>
 </html>
