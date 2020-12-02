@@ -1,12 +1,8 @@
 <?php
+require_once 'sqlconnect.php';
+
 $user = $_POST["user"];
 $pass = $_POST["pass"];
-
-try {
-    $conn = new PDO("mysql:host=localhost;dbname=apsle", "root", "");
-} catch (PDOException $pe) {
-    die("Could not connect to the database $dbname :" . $pe->getMessage());
-}
 
 $sqluser = 'SELECT username FROM adminlogins';
 $sqlpass = 'SELECT pass FROM adminlogins';

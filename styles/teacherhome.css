@@ -2,9 +2,9 @@ body
 {
 	margin: 30;
 	padding: 30;
-	box-sizing: border-box: 
+	box-sizing: border-box;
 	animation: bgcolor infinite 50%;
-	background: url('../img/blackboardbg.jpg');
+	background: url('../resources/img/blackboardbg.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -28,7 +28,7 @@ h2
 	text-align: center;
 }
 .title{
-	background-color:#04d9ff;opacity:0.6;; 
+	background-color:#04d9ff;opacity:0.6;
     margin: auto;
     margin-top: 250px;
     width: 70%;
@@ -36,8 +36,6 @@ h2
     padding: 3px;
 }
 .buttongrp{
-
-
 	width: 70%;
   	padding: 70px;
   	margin: 2% 15%;
@@ -54,4 +52,8 @@ h2
   display: inline-block;
   border: 1px solid #04d9ff;
   box-sizing: border-box;
+}
+
+button:hover{
+	background-color: aquamarine;
 }

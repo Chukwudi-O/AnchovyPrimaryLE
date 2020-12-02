@@ -2,7 +2,7 @@ body
 {
 	margin: 30;
 	padding: 30;
-	box-sizing: border-box: 
+	box-sizing: border-box;
 	animation: bgcolor infinite 50%;
 	background: url('../resources/img/abg.jpg');
 	height: 500px;

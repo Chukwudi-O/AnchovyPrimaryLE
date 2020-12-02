@@ -1,0 +1,33 @@
+body
+{
+	margin: 30;
+	padding: 30;
+	box-sizing: border-box;
+	animation: bgcolor infinite 50%;
+	background: url('../resources/img/blackboardbg.jpg');
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+td,th{
+    text-align: center;
+}
+th{
+    border-bottom: 2px solid;
+}
+table{
+    width: 25%;
+    margin-left: 38%;
+    border: 2px solid;
+}
+
+.mainDiv{
+    width: 50%;
+    margin: auto;
+    border: 2px solid;
+}

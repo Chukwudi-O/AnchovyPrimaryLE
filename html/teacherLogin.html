@@ -12,21 +12,15 @@
         </div>
 
         <div class="forms">
-    <form>
-        <div class="field">
-            <input type="Text" placeholder="username">
-        </div>
-
-        <div class="field">
-            <input type="Password" placeholder="Password">
-        </div>
-
+    <form action="../php/teacherHome.php" method="post" onsubmit="return validateLogin()">
+        <input type="text" id="tuser" name="tuser">
+        <input type="password" id="tpass" name="tpass">
         <div class="login">
             <input type="Submit" value="LOGIN">
         </div>
     </form>
     <a href="index.html" style="text-align: right;">Not a teacher? Click to go back.</a>
 </div>
- 
+ <script src="../scripts/studentLogin.js"></script>
 </body>
 </html>
