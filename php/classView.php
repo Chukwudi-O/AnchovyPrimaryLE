@@ -1,5 +1,12 @@
 <?php
-require_once 'sqlconnect.php'
+require_once 'sqlconnect.php';
+$user = $_POST['uservmc'];
+$pass = $_POST['passvmc'];
+
+$sqlg = 'SELECT `gradeNum` FROM `teacherlogins` WHERE `username`="'.$user.'" && `pass`="'.$pass.'"';
+$grade = $conn->query($sqlg)->fetch();
+$sqlc = 'SELECT `classNum` FROM `teacherlogins` WHERE `username`="'.$user.'" && `pass`="'.$pass.'"';
+$class = $conn->query($sqlc)->fetch();
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,6 +18,7 @@ require_once 'sqlconnect.php'
     <h1>ANCHOVY PRIMARY SCHOOL LEARNING ENVIRONMENT</h1>
     
 	<div class="mainDiv">
+        <h1>Grade <?php echo($grade[0]);?> Class <?php echo($class[0]);?></h1>
         <h2>Class View</h2>
         <div>
             <div class="sub">
