@@ -1,4 +1,13 @@
+body
+{
+	background: url('../resources/img/abg.jpg');
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+
 .centerAlign {
+	padding: 2%;
 	background: lightblue;
 	width: 50%;
 	margin: auto;

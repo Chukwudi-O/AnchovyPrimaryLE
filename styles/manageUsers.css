@@ -29,11 +29,22 @@ input[type=button]{
 	width: 25%;
 }
 
-.searchUser{
+.DeleteUser{
 	border: 1px solid;
 
 }
 
-.searchUser label{
-	margin-left: 20%;
+table{
+	width: 50%;
+	text-align: center;
+	border: 2px solid;
+	margin-left: 25%;
+	border-collapse: collapse;
+}
+td{
+	border-right: 2px solid;
+	padding-bottom: 2%;
+}
+th{
+	border: 2px solid;
 }
