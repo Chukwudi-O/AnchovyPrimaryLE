@@ -1,0 +1,16 @@
+h1,h2,h3{
+    text-align: center;
+}
+
+.mainDiv{
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.subjects{
+    border-bottom: 1px solid;
+    padding-bottom: 2%;
+}
