@@ -54,7 +54,7 @@ if(isset($_POST['mathsub'])){
         $cMatExt = explode('.',$cMatName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'engish','material'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'engish','material',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cMatName);
     }
     if (file_exists($cAs['tmp_name']) || is_uploaded_file($cAs['tmp_name'])){
@@ -64,7 +64,7 @@ if(isset($_POST['mathsub'])){
         $cAsExt = explode('.',$cAsName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'engish','assignment'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'engish','assignment',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cAsName);
     }
 }if(isset($_POST['scisub'])){
@@ -86,7 +86,7 @@ if(isset($_POST['mathsub'])){
         $cMatExt = explode('.',$cMatName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'science','material'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'science','material',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cMatName);
     }
     if (file_exists($cAs['tmp_name']) || is_uploaded_file($cAs['tmp_name'])){
@@ -96,7 +96,7 @@ if(isset($_POST['mathsub'])){
         $cAsExt = explode('.',$cAsName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'science','assignment'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'science','assignment',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cAsName);
     }
 }if(isset($_POST['socsub'])){
@@ -118,7 +118,7 @@ if(isset($_POST['mathsub'])){
         $cMatExt = explode('.',$cMatName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'social','material'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cMatExt[0],end($cMatExt),'social','material',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cMatName);
     }
     if (file_exists($cAs['tmp_name']) || is_uploaded_file($cAs['tmp_name'])){
@@ -128,9 +128,9 @@ if(isset($_POST['mathsub'])){
         $cAsExt = explode('.',$cAsName);
 
         $sqltu = 'INSERT INTO teacheruploads (`fileN`,`extension`,`subject`,`type`,`gradeNum`,`classNum`) VALUES (?,?,?,?,?,?)';
-        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'social','assignment'$stmtg[0],$stmtc[0]]);
+        $stmtu = $conn->prepare($sqltu)->execute([$cAsExt[0],end($cAsExt),'social','assignment',$stmtg[0],$stmtc[0]]);
         move_uploaded_file($cMatTmp,'../teacherUploads/'.$cAsName);
     }
 }
-header("Location: addCourseMaterial.php");
+echo '<script type="text/javascript">history.go(-1);</script>';
 ?>

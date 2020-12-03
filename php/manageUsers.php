@@ -1,5 +1,20 @@
 <?php
 require_once 'sqlconnect.php';
+$sqlnT = 'SELECT `username` FROM `teacherlogins`';
+$sqlng1 = 'SELECT `username` FROM `grade1students`';
+$sqlng2 = 'SELECT `username` FROM `grade2students`';
+$sqlng3 = 'SELECT `username` FROM `grade3students`';
+$sqlng4 = 'SELECT `username` FROM `grade4students`';
+$sqlng5 = 'SELECT `username` FROM `grade5students`';
+$sqlng6 = 'SELECT `username` FROM `grade6students`';
+
+$stmtT = $conn->query($sqlnT)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg1 = $conn->query($sqlng1)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg2 = $conn->query($sqlng2)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg3 = $conn->query($sqlng3)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg4 = $conn->query($sqlng4)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg5 = $conn->query($sqlng5)->fetchAll(PDO::FETCH_COLUMN);
+$stmtg6 = $conn->query($sqlng6)->fetchAll(PDO::FETCH_COLUMN);
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +33,7 @@ require_once 'sqlconnect.php';
 				<button name="add">ADD USER</button><br>
 			</div>
 			<div>
-				<button name="search">SEARCH USER</button>
+				<button name="delete">DELETE USER</button>
 			</div>
 		</form>
 	
@@ -56,16 +71,74 @@ require_once 'sqlconnect.php';
 			<div class="auc">
 				<input type="button" value="Cancel" onclick="reload()">
 			</div>';			
-		} else if (isset($_GET['search'])){
-			echo '<div class="searchUser"><h3>Search and Edit User</h3>
-				<label for="sbn">Search by name</label><input type="radio" name="sb" id="sbn">
-				<label for="sbg">Search by grade</label><input type="radio" name="sb" id="sbg"><br>
-				<input type="text"><br>
-				
-			</div>';
+		} else if (isset($_GET['delete'])){
+			echo '<div class="DeleteUser"><h3>Delete User</h3>
+			
+			<table>
+				<tr><th>Username</th><th>Type of User</th><th>Delete Button</th></tr>';
+
+				for($i=0;$i<count($stmtT);$i++){
+					echo '<tr><td>'.$stmtT[$i].'</td><td>Teacher</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtT[$i].'" name="un">
+						<input type="hidden" value="teacherlogins" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg1);$i++){
+					echo '<tr><td>'.$stmtg1[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg1[$i].'" name="un">
+						<input type="hidden" value="grade1students" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg2);$i++){
+					echo '<tr><td>'.$stmtg2[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg2[$i].'" name="un">
+						<input type="hidden" value="grade2students" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg3);$i++){
+					echo '<tr><td>'.$stmtg3[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg3[$i].'" name="un">
+						<input type="hidden" value="grade3students" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg4);$i++){
+					echo '<tr><td>'.$stmtg4[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg4[$i].'" name="un">
+						<input type="hidden" value="grade4students" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg5);$i++){
+					echo '<tr><td>'.$stmtg5[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg5[$i].'" name="un">
+						<input type="hidden" value="grade5students" name="gr">
+					</form></td>';
+				}
+				for($i=0;$i<count($stmtg6);$i++){
+					echo '<tr><td>'.$stmtg6[$i].'</td><td>Student</td><td>
+					<form action="deleteUsers.php" method="post">
+						<button type="submit">DELETE</button>
+						<input type="hidden" value="'.$stmtg6[$i].'" name="un">
+						<input type="hidden" value="grade6students" name="gr">
+					</form></td>';
+				}
+			echo '</table></div>';	
+			
 		}
 		
 	?>
+	<a href="javascript:window.location.href = 'adminLogin.php';">Click here to go back.</a>
 </div>
 <script type="text/javascript">
 		function validate(){
@@ -87,6 +160,7 @@ require_once 'sqlconnect.php';
 		function reload(){
 			window.location.replace("manageUsers.php");
 		}
+		
 </script>	
 </body>
 </html>
