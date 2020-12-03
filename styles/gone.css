@@ -4,9 +4,9 @@ body
 {
 	margin: auto;
 	padding: 30px;
-	box-sizing: border-box: 
+	box-sizing: border-box;
 	animation: bgcolor infinite 50%;
-	background: url('img/nwbg2.jpg');
+	background: url('../resources/img/nwbg2.jpg');
 	height: 500px;
 	background-size: cover;
 	background-position: center;

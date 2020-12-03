@@ -16,6 +16,6 @@ if ($_POST['tou'] == 'teacher'){
 	$stmt = $conn->query($sqls)->fetchAll(PDO::FETCH_COLUMN);
 	
 	$stmti = $conn->prepare($sqli)->execute([$_POST['userN'],hash('sha256',$_POST['passW']),$_POST['classnum'],$stmt[0]]);
-	header("Location: manageUsers.php");
+	header("Location: manageUsers.php?add=");
 }
 ?>

@@ -17,7 +17,7 @@
     <?php echo '<input type="hidden" name="userH" value="'.$user.'">';
     echo '<input type="hidden" name="passH" value="'.$pass.'">';?>
 </form>
-<form action="../html/manageTests.html"><button class="btns" type="submit">Manage Test</button></form>
+<form action="../html/testTemplate.html"><button class="btns" type="submit">Manage Test</button></form>
 <form action="../html/manageCourseMaterial.html"><button class="btns" type="submit">Manage Course Material</button></form>
 <form><button class="btns" type="button">View My Class Attendance</button></form>
 <a href="javascript:window.location.href = '../html/teacherLogin.html'">Click here to log out.</a>

@@ -7,7 +7,8 @@ body
 	background: url('../resources/img/blackboardbg.jpg');
 	height: 500px;
 	background-size: cover;
-	background-position: center;
+    background-position: center;
+    color:white;
 }
 
 h1,h2,h3{
@@ -30,4 +31,8 @@ table{
     width: 50%;
     margin: auto;
     border: 2px solid;
+}
+
+a {
+    color:lightblue;
 }
