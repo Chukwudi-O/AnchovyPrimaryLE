@@ -19,7 +19,7 @@ $stmtn = $conn->query($sqln)->fetchAll(PDO::FETCH_COLUMN);
     <h1>ANCHOVY PRIMARY SCHOOL LEARNING ENVIRONMENT</h1><br>
     <div class="mainDiv">
         <h2>Class View<h2><br>
-        <?php echo '<h3>Students in grade '.$stmtg[0].', class '.$stmtc[0].'</h3>';?>
+        <?php echo '<h3>Grade '.$stmtg[0].'</h3><br><h3>Class '.$stmtc[0].'</h3>';?>
         <table>
             <tr>
                 <th>Student Name<th>

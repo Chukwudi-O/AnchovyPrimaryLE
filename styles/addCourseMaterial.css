@@ -1,0 +1,15 @@
+h1{
+    text-align:center;
+}
+
+.mainDiv{
+    width: 50%;
+    margin:auto;
+    background-color: lightblue;
+    padding: 5%;
+}
+
+input[type=button]{
+    width: 50%;
+    margin-left: 25%;
+}

@@ -1,0 +1,15 @@
+h1,h2,h3{
+    text-align: center;
+}
+
+.mainDiv{
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
+    padding: 5%;
+}
+
+.sub{
+    border: 1px solid;
+    padding: 5%;
+}
