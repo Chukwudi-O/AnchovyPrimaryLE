@@ -1,3 +1,7 @@
+<?php
+$user = $_POST['useracm'];
+$pass = $_POST['passacm'];
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +20,10 @@
             <br><br>
             Add Assignments : <input type="File" name="mathas" id="mCAs" accept="image/*,.pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
             <button type="submit" name="mathsub">Submit Files</button>
+            <?php 
+				echo '<input type="hidden" name="userm" value="'.$user.'">';
+				echo '<input type="hidden" name="passm" value="'.$pass.'">';
+			?>
         </form>
         <br><hr><br>
 
@@ -25,6 +33,10 @@
             <br><br>
             Add Assignments : <input type="File" name="englishas" accept="image/*,.pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
             <button type="submit" name="engsub">Submit Files</button>
+            <?php 
+				echo '<input type="hidden" name="usere" value="'.$user.'">';
+				echo '<input type="hidden" name="passe" value="'.$pass.'">';
+			?>
         </form>
         <br><hr><br>
 
@@ -34,6 +46,10 @@
             <br><br>
             Add Assignments : <input type="File" name="scienceas" accept="image/*,.pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
             <button type="submit" name="scisub">Submit Files</button>
+            <?php 
+				echo '<input type="hidden" name="users" value="'.$user.'">';
+				echo '<input type="hidden" name="passs" value="'.$pass.'">';
+			?>
         </form>
         <br><hr><br>
 
@@ -43,8 +59,13 @@
             <br><br>
             Add Assignments : <input type="File" name="socialas" accept="image/*,.pdf,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
             <button type="submit" name="socsub">Submit Files</button>
+            <?php 
+				echo '<input type="hidden" name="userss" value="'.$user.'">';
+				echo '<input type="hidden" name="passss" value="'.$pass.'">';
+			?>
         </form>
         <br><hr><br>
+        <a href="javascript:history.go(-1)">Click here to go back.</a>
     </div>
 
 </body>
