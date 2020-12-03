@@ -1,3 +1,14 @@
+body
+{
+	margin: 30;
+	padding: 30;
+	box-sizing: border-box; 
+	animation: bgcolor infinite 50%;
+	background: url('../resources/img/blackboardbg.jpg');
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
 .centerText{
 	text-align: center;
 }
