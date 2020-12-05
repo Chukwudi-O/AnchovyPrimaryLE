@@ -214,9 +214,6 @@ CREATE TABLE `teacheruploads` (
 -- Dumping data for table `teacheruploads`
 --
 
-INSERT INTO `teacheruploads` (`id`, `fileN`, `extension`, `subject`, `type`, `gradeNum`, `classNum`) VALUES
-(8, 'project-demo-schedule (1)', 'pdf', 'math', 'material', 1, 1);
-
 --
 -- Indexes for dumped tables
 --
@@ -337,3 +334,4 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
